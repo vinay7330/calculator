@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Calculator </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet'  href='calculator.css'>
+    <script src='calculator.js'></script>
+</head>
+<body>
+    <table id="calcu">
+        <tr>
+            <td colspan="4"><input type="text" id="result"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="display('1')" 
+                        onkeydown="calculate(event)"> </td>
+            <td><input type="button" value="2" onclick="display('2')" 
+                        onkeydown="calculate(event)"> </td>
+            <td><input type="button" value="3" onclick="display('3')" 
+                        onkeydown="calculate(event)"> </td>
+            <td><input type="button"value="c" onclick="clr()" style="background-color:rgb(81, 63, 63)"/> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="display('4')" 
+                        onkeydown="calculate(event)"> </td>
+            <td><input type="button" value="5" onclick="display('5')" 
+                        onkeydown="calculate(event)"> </td>
+            <td><input type="button" value="6" onclick="display('6')" 
+                        onkeydown="calculate(event)"> </td>
+             <td><input type="button" value="+" onclick="display('+')" style="background-color:skyblue"
+                            onkeydown="calculate(event)"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="display('7')" 
+                        onkeydown="calculate(event)"> </td>
+            <td><input type="button" value="8" onclick="display('8')" 
+                        onkeydown="calculate(event)"> </td>
+            <td><input type="button" value="9" onclick="display('9')" 
+                        onkeydown="calculate(event)"> </td>
+            <td><input type="button" value="-" onclick="display('-')" style="background-color:skyblue"
+                        onkeydown="calculate(event)"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="display('0')" 
+                        onkeydown="calculate(event)"> </td>
+            <td><input type="button" value="/" onclick="display('/')"  style="background-color:skyblue"
+                            onkeydown="calculate(event)"> </td>
+            <td><input type="button" value="x" onclick="display('*')"  style="background-color:skyblue"
+                                onkeydown="calculate(event)"> </td>
+            <td><input type="button" value="=" onclick="solve()" style="background-color:rgb(178, 235, 135)"> </td>  
+        </tr>
+    </table>
+    <footer>
+        <font align="center"><br><br>
+            <b><i>
+            <p>Published by &copy; Vas</p>
+            <p>Contact us : <a class="footerLink" href="mailto:vinay7330792403@gmail.com"><label>✉️</label>Email us</a></p>
+        </i></b>
+    </font>
+    </footer>
+</body>
+</html>
